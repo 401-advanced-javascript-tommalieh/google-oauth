@@ -37,7 +37,7 @@ module.exports = async (req, res, next) => {
 async function getRemoteUserInfo(token) {
   const userResponse = await superagent
     .get(remoteAPI)
-    .set('user-agent', 'express-app');
+    .set('user-agent', 'express-app')
     .set('Authorization', `Bearer ${token}`)
   const user = userResponse.body;
   return user;
