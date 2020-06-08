@@ -1,5 +1,4 @@
 // from GH docs Request a user's GitHub identity
-require('dotenv').config();
 const URL = 'https://accounts.google.com/o/oauth2/v2/auth';
 // needed query string
 const options = {
