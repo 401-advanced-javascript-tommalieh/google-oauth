@@ -5,7 +5,7 @@ const options = {
   client_id: '219059553766-e1kp4mfumg2m9l12qqrbontq4mduloco.apps.googleusercontent.com', //required!!
   scope: 'https://www.googleapis.com/auth/userinfo.profile',
   response_type: 'token',
-  redirect_uri: `https://localhost:8000/oauth`
+  redirect_uri: `https://localhost:8080/oauth`
 };
 // converting the obj to string and formatting the resulting string
 const queryString = Object.keys(options)
