@@ -1,11 +1,12 @@
 // from GH docs Request a user's GitHub identity
+require('dotenv').config();
 const URL = 'https://accounts.google.com/o/oauth2/v2/auth';
 // needed query string
 const options = {
   client_id: '219059553766-e1kp4mfumg2m9l12qqrbontq4mduloco.apps.googleusercontent.com', //required!!
   scope: 'https://www.googleapis.com/auth/userinfo.profile',
   response_type: 'token',
-  redirect_uri: 'https://localhost:8080/oauth'
+  redirect_uri: `https://localhost:${process.env.PORT}/oauth`
 };
 // converting the obj to string and formatting the resulting string
 const queryString = Object.keys(options)

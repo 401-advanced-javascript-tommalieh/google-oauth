@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const oauth = require('./OAuth.js');
 // const users = require('./users.js');
