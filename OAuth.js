@@ -9,6 +9,7 @@ module.exports = async (req, res, next) => {
   try {
     
     console.log('hello from the middleware');
+    console.log(req.access_token);
     const token = req.access_token;
     
     const remoteUser = await getRemoteUserInfo(token);
