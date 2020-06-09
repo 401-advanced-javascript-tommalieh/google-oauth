@@ -8,7 +8,7 @@ const remoteAPI = 'https://www.googleapis.com/drive/v2/files';
 module.exports = async (req, res, next) => {
   try {
     
-    console.log('hi');
+    console.log('hello from the middleware');
     const token = req.access_token;
     
     const remoteUser = await getRemoteUserInfo(token);

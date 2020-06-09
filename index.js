@@ -8,7 +8,7 @@ app.use(express.static('./public'));
 
 // oauth route
 app.get('/oauth', oauth, (req, res) => {
-  console.log('hi');
+  console.log('hello from the handler');
   res.json(req.user);
 });
 app.listen(PORT, () => console.log(`server is up ${PORT}`));
