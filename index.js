@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require('express');
 const oauth = require('./OAuth.js');
-// const users = require('./users.js');
 const app = express();
 const PORT = process.env.PORT || 8080;
 app.use(express.json());
